@@ -1,0 +1,23 @@
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-for-login {
+  background: url('./img/office.png') no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.transparentCover {
+  background-color: rgba(31, 29, 29, 0.5);
+  z-index: -1;
+  position: absolute;
+  background-size: cover;
+}
+
+.shadow-text {
+  text-shadow: 1px 1px 0 rgb(63, 62, 62), 2px 2px 0 rgb(73, 72, 72);
+}
