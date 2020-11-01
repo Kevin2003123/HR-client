@@ -66,7 +66,7 @@ html {
   }
 
   .position-small {
-    overflow: auto;
+    overflow-x: scroll;
   }
 
   .modal-small {
