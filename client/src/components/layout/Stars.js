@@ -17,7 +17,7 @@ const Stars = ({ rate }) => {
       case 0.5:
         return (
           <div className='d-flex fa-lg'>
-            <i className='fas fa-star-half-alt fa-lg'></i>
+            <i className='fas fa-star-half-alt fa-lg text-danger'></i>
             <i className='far fa-star fa-lg'></i>
             <i className='far fa-star fa-lg'></i>
             <i className='far fa-star fa-lg'></i>
@@ -28,7 +28,7 @@ const Stars = ({ rate }) => {
       case 1.0:
         return (
           <div className='d-flex'>
-            <i className='fas fa-star fa-lg'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
             <i className='far fa-star fa-lg'></i>
             <i className='far fa-star fa-lg'></i>
             <i className='far fa-star fa-lg'></i>
@@ -39,8 +39,8 @@ const Stars = ({ rate }) => {
       case 1.5:
         return (
           <div className='d-flex'>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star-half-alt fa-lg'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star-half-alt fa-lg text-danger'></i>
             <i className='far fa-star fa-lg'></i>
             <i className='far fa-star fa-lg'></i>
             <i className='far fa-star fa-lg'></i>
@@ -50,8 +50,8 @@ const Stars = ({ rate }) => {
       case 2.0:
         return (
           <div className='d-flex'>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
             <i className='far fa-star fa-lg'></i>
             <i className='far fa-star fa-lg'></i>
             <i className='far fa-star fa-lg'></i>
@@ -61,9 +61,9 @@ const Stars = ({ rate }) => {
       case 2.5:
         return (
           <div className='d-flex'>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star-half-alt fa-lg'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star-half-alt fa-lg text-danger'></i>
             <i className='far fa-star fa-lg'></i>
             <i className='far fa-star fa-lg'></i>
           </div>
@@ -72,9 +72,9 @@ const Stars = ({ rate }) => {
       case 3.0:
         return (
           <div className='d-flex'>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
             <i className='far fa-star fa-lg'></i>
             <i className='far fa-star fa-lg'></i>
           </div>
@@ -83,10 +83,10 @@ const Stars = ({ rate }) => {
       case 3.5:
         return (
           <div className='d-flex'>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star-half-alt fa-lg'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star-half-alt fa-lg text-danger'></i>
             <i className='far fa-star fa-lg'></i>
           </div>
         );
@@ -94,10 +94,10 @@ const Stars = ({ rate }) => {
       case 4.0:
         return (
           <div className='d-flex'>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
             <i className='far fa-star fa-lg'></i>
           </div>
         );
@@ -105,22 +105,22 @@ const Stars = ({ rate }) => {
       case 4.5:
         return (
           <div className='d-flex'>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star-half-alt fa-lg'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star-half-alt fa-lg text-danger'></i>
           </div>
         );
 
       case 5:
         return (
           <div className='d-flex'>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
-            <i className='fas fa-star fa-lg'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
+            <i className='fas fa-star fa-lg text-danger'></i>
           </div>
         );
 

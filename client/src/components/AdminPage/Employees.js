@@ -114,7 +114,7 @@ const Employees = ({
   ) : (
     <div className='container-fluid vh-100 m-0 p-0 w-100'>
       <div className='row row-cols-1 p-0'>
-        <div className='col p-0 w-100'>
+        <div className='col p-0 w-100 position_small'>
           <Navbar />
         </div>
         <div
@@ -130,7 +130,7 @@ const Employees = ({
           </div>
         </div>
 
-        <div className='col d-flex justify-content-between mr-5 pl-5 pr-5 pt-4 pb-4 w-100'>
+        <div className='col d-flex d-small justify-content-between mr-5 pl-5 pr-5 pt-4 pb-4 w-100'>
           <input
             className='ml-5 pl-2 rounded border border-secondary'
             type='search'
@@ -140,7 +140,7 @@ const Employees = ({
             style={{ width: 250, height: 34 }}
             onChange={(e) => getSearch(e)}
           />
-          <div>
+          <div className='mt-small ml-small'>
             <AddUser />
           </div>
         </div>
@@ -149,7 +149,7 @@ const Employees = ({
             <Spinner />
           ) : (
             <div className='d-flex flex-column w-100 '>
-              <ul className='list-group list-group-flush w-100'>
+              <ul className='list-group list-group-flush w-100 position-small'>
                 {employees.map((employee) => (
                   <EmployeesItems
                     key={uuidv4()}

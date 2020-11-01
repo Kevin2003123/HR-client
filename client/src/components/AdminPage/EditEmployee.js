@@ -119,12 +119,12 @@ const EditEmployee = ({ employee, editEmployee, edited }) => {
                 <span aria-hidden='true'>&times;</span>
               </button>
             </div>
-            <div className='modal-body p-0 m-0'>
+            <div className='modal-body p-0 m-0 modal-small modal-w-lg'>
               <form
                 onSubmit={(e) => onSubmit(e)}
                 className='d-flex flex-column'
               >
-                <div className=' d-flex align-items-center '>
+                <div className=' d-flex modal-column align-items-center '>
                   <div className='mt-3 ml-3'>
                     {employee.avatar === '' ? (
                       <img
@@ -144,74 +144,74 @@ const EditEmployee = ({ employee, editEmployee, edited }) => {
                       />
                     )}
                   </div>
-                  <div className='row ml-3 mr-3'>
-                    <div className='col-4'>
+                  <div className='row ml-3 mr-3 modal-column modal-input-small'>
+                    <div className='col-4s mt-2 modal-column '>
                       <label htmlFor='name'>Name</label>
                       <input
                         type='text'
                         name='name'
                         value={name}
                         onChange={(e) => onChange(e)}
-                        className='border rounded shadow-sm'
+                        className='border rounded shadow-sm input-lg-w'
                       />
                     </div>
-                    <div className='col-4'>
+                    <div className='col-4s mt-2 modal-column'>
                       <label htmlFor='lastName'>Last Name</label>
                       <input
                         type='text'
                         name='lastName'
                         value={lastName}
                         onChange={(e) => onChange(e)}
-                        className='border rounded shadow-sm'
+                        className='border rounded shadow-sm input-lg-w'
                         required
                       />
                     </div>
-                    <div className='col-4'>
+                    <div className='col-4s mt-2 modal-column'>
                       <label htmlFor='birthday'>Birthday</label>
                       <input
                         type='date'
                         name='birthday'
                         value={birthday}
                         onChange={(e) => onChange(e)}
-                        className='border rounded shadow-sm'
+                        className='border rounded shadow-sm input-lg-w'
                         required
                       />
                     </div>
-                    <div className='col-4 mt-2'>
+                    <div className='col-4s mt-2 modal-column'>
                       <label htmlFor='email'>Email</label>
                       <input
                         type='email'
                         name='email'
                         value={email}
                         onChange={(e) => onChange(e)}
-                        className='border  rounded shadow-sm'
+                        className='border  rounded shadow-sm input-lg-w'
                         required
                       />
                     </div>
-                    <div className='col-4 mt-2'>
+                    <div className='col-4s mt-2 modal-column'>
                       <label htmlFor='phone'>Phone</label>
                       <input
                         type='text'
                         name='phone'
                         value={phone}
                         onChange={(e) => onChange(e)}
-                        className='border  rounded shadow-sm'
+                        className='border  rounded shadow-sm input-lg-w'
                         required
                       />
                     </div>
-                    <div className='col-4 mt-2'>
+                    <div className='col-4s mt-2 modal-column'>
                       <label htmlFor='mobilePhone'>Mobile Phone</label>
                       <input
                         type='text'
                         name='mobilePhone'
                         value={mobilePhone}
                         onChange={(e) => onChange(e)}
-                        className='border  rounded shadow-sm'
+                        className='border  rounded shadow-sm input-lg-w'
                         required
                       />
                     </div>
 
-                    <div className='col-4 mt-2'>
+                    <div className='col-4s mt-2 modal-column'>
                       <label htmlFor='workPosition'>Work Position</label>
                       <input
                         type='text'
@@ -225,7 +225,7 @@ const EditEmployee = ({ employee, editEmployee, edited }) => {
                   </div>
                 </div>
 
-                <div className='ml-3 mt-3'>
+                <div className='mt-3 modal-i-address2'>
                   <label htmlFor='address' className='d-block'>
                     Address
                   </label>
@@ -235,7 +235,7 @@ const EditEmployee = ({ employee, editEmployee, edited }) => {
                     rows='3.5'
                     value={address}
                     onChange={(e) => onChange(e)}
-                    className='border  rounded shadow-sm'
+                    className='border  rounded shadow-sm modal-i-address '
                     required
                   ></textarea>
                 </div>

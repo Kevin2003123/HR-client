@@ -19,7 +19,7 @@ const Navbar = ({ user: { isAdmin, user }, logout }) => {
         <h5 className='pl-1 font-weight-bold'>HR Client</h5>
       </div>
       <div className='d-flex align-items-center mr-5 pr-5'>
-        <h6 className='text-danger mr-3'>
+        <h6 className='text-danger mr-3 hide_small'>
           {isAdmin ? 'Employees' : 'Reviews'}
         </h6>
 

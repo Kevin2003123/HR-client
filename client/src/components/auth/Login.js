@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { login } from '../../actions/auth';
-
+import Alert from '../../components/layout/Alert';
 const Login = ({ login, isAuthenticated, isAdmin, isEmployee }) => {
   const [formData, setFormData] = useState({
     email: '',
@@ -27,11 +27,22 @@ const Login = ({ login, isAuthenticated, isAdmin, isEmployee }) => {
     return <Redirect to='/assignment' />;
   }
 
+  const setFormAdmin = () => {
+    setFormData({ email: 'admin@admin.com', password: 'admin' });
+  };
+
+  const setFormEmployee = () => {
+    setFormData({ email: 'Amya_McClure@hotmail.com', password: '123' });
+  };
+
   return (
     <div className='container-fluid d-flex flex-column align-items-center justify-content-center vh-100 bg-for-login'>
+      <div className='alert-login'>
+        <Alert />
+      </div>
       <div className='transparentCover w-100 h-100'></div>
-      <div>
-        <h1 className='text-primary  text-center shadow-text'>
+      <div className='position-relative'>
+        <h1 className='text-primary text-center font-weight-bold'>
           Welcome to HR-client
         </h1>
         <h4 className='text-center '>
@@ -67,6 +78,28 @@ const Login = ({ login, isAuthenticated, isAdmin, isEmployee }) => {
             className='btn btn-primary form-control'
           />
         </form>
+
+        <div className='d-flex flex-column justify-content-center align-items-center'>
+          <p className='text-center font-weight-bold'>
+            Don't have an account? Login as Admin or Employee
+          </p>
+          <div className='d-flex text-primary justify-content-center'>
+            <p
+              className='mr-5 pr-2 font-weight-bold'
+              role='button'
+              onClick={(e) => setFormAdmin()}
+            >
+              Admin
+            </p>
+            <p
+              className='ml-5 pl-2 font-weight-bold'
+              role='button'
+              onClick={(e) => setFormEmployee()}
+            >
+              Employee
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

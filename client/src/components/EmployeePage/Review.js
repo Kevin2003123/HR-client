@@ -144,12 +144,12 @@ const Review = ({
                   <li className='list-group-item'>
                     <h5 className='mb-3 font-weight-bold'>Overall Report</h5>
 
-                    <div className='row row-cols-2 ml-1'>
+                    <div className='row-cols-2r ml-1'>
                       <div className='d-flex mb-3 align-items-center'>
                         <div style={{ width: 150 }}>Attitude</div>
                         <ReviewSelect />
                       </div>
-                      <div className='d-flex mb-3 align-items-center'>
+                      <div className='d-flex mb-3 align-items-center mr-lg-data'>
                         <div style={{ width: 150 }}>Productivity</div>
                         <ReviewSelect />
                       </div>
@@ -157,7 +157,7 @@ const Review = ({
                         <div style={{ width: 150 }}>Communication</div>
                         <ReviewSelect />
                       </div>
-                      <div className='d-flex mb-3 align-items-center'>
+                      <div className='d-flex mb-3 align-items-center mr-lg-data'>
                         <div style={{ width: 150 }}>Initiative</div>
                         <ReviewSelect />
                       </div>
@@ -165,7 +165,7 @@ const Review = ({
                         <div style={{ width: 150 }}>Growth</div>
                         <ReviewSelect />
                       </div>
-                      <div className='d-flex mb-3 align-items-center'>
+                      <div className='d-flex mb-3 align-items-center mr-lg-data'>
                         <div style={{ width: 150 }}>Innovation</div>
                         <ReviewSelect />
                       </div>

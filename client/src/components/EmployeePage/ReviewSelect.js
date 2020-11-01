@@ -61,26 +61,10 @@ const ReviewSelect = () => {
         ></div>
       ))}
 
-      {ratingValue === 1 && (
-        <div className='ml-2 ' id={`${uuidv4()}`}>
-          Terrible
-        </div>
-      )}
-      {ratingValue === 2 && (
-        <div className='ml-2 ' id={`${uuidv4()}`}>
-          Poor
-        </div>
-      )}
-      {ratingValue === 3 && (
-        <div className='ml-2 ' id={`${uuidv4()}`}>
-          Average
-        </div>
-      )}
-      {ratingValue === 4 && (
-        <div className='ml-2 ' id={`${uuidv4()}`}>
-          Very Good
-        </div>
-      )}
+      {ratingValue === 1 && <div className='ml-2 '>Terrible</div>}
+      {ratingValue === 2 && <div className='ml-2 '>Poor</div>}
+      {ratingValue === 3 && <div className='ml-2 '>Average</div>}
+      {ratingValue === 4 && <div className='ml-2 '>Very Good</div>}
       {ratingValue === 5 && (
         <div className='ml-2' id={`${uuidv4()}`}>
           Excelent

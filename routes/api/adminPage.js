@@ -268,6 +268,11 @@ router.delete('/delete/employee/:employeeId', async (req, res) => {
     await User.findOneAndRemove({ _id: employeeId });
     await Pending.findOneAndRemove({ user: employeeId });
     await Completed.findOneAndRemove({ user: employeeId });
+    await Pending.updateMany(
+      {},
+      { $pull: { pending: { user: employeeId, isCompleted: false } } }
+    );
+
     await employee.remove();
 
     res.json({

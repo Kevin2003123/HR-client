@@ -201,10 +201,12 @@ const Assigments = ({
           className='col bg-light  d-flex flex-column p-0 vw-100'
           style={{ height: 175 }}
         >
-          <div className='d-flex w-100 h-100'>
-            <h1 className='mt-auto ml-5 pl-5 pb-2 font-weight-bold'>Reviews</h1>
+          <div className='d-flex d-small w-100 h-100'>
+            <h1 className='mt-review ml-5 pl-5 pb-2 font-weight-bold'>
+              Reviews
+            </h1>
 
-            <div className='d-flex mt-auto ml-auto mr-auto'>
+            <div className='d-flex mt-review2 ml-auto mr-auto'>
               <div
                 className={`mr-2 py-1 px-4 ${pending}`}
                 role='button'

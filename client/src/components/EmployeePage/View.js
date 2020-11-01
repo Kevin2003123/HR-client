@@ -102,12 +102,12 @@ const View = ({ employee }) => {
                 </li>
                 <li className='list-group-item'>
                   <h5 className='mb-3 font-weight-bold'>Overall Report</h5>
-                  <div className='row row-cols-2 ml-1'>
+                  <div className='row row-cols-2s ml-1'>
                     <div className='d-flex mb-3'>
                       <div style={{ width: 150 }}>Attitude</div>
                       <Stars rate={employee.skills.attitude} />
                     </div>
-                    <div className='d-flex mb-3'>
+                    <div className='d-flex mb-3 mr-lg-data'>
                       <div style={{ width: 150 }}>Productivity</div>
                       <Stars rate={employee.skills.productivity} />
                     </div>
@@ -115,7 +115,7 @@ const View = ({ employee }) => {
                       <div style={{ width: 150 }}>Communication</div>
                       <Stars rate={employee.skills.communication} />
                     </div>
-                    <div className='d-flex mb-3'>
+                    <div className='d-flex mb-3 mr-lg-data'>
                       <div style={{ width: 150 }}>Initiative</div>
                       <Stars rate={employee.skills.initiative} />
                     </div>
@@ -123,7 +123,7 @@ const View = ({ employee }) => {
                       <div style={{ width: 150 }}>Growth</div>
                       <Stars rate={employee.skills.growth} />
                     </div>
-                    <div className='d-flex mb-3'>
+                    <div className='d-flex mb-3 mr-lg-data'>
                       <div style={{ width: 150 }}>Innovation</div>
                       <Stars rate={employee.skills.innovation} />
                     </div>
@@ -140,18 +140,6 @@ const View = ({ employee }) => {
                   <p className='text-secondary'>{employee.comment}</p>
                 </li>
               </ul>
-            </div>
-            <div className='modal-footer'>
-              <button
-                type='button'
-                className='btn btn-secondary'
-                data-dismiss='modal'
-              >
-                Close
-              </button>
-              <button type='button' className='btn btn-primary'>
-                Understood
-              </button>
             </div>
           </div>
         </div>

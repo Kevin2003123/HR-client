@@ -69,7 +69,7 @@ const DeleteEmployee = ({
               </button>
 
               <div className='d-flex flex-column justify-content-center align-items-center'>
-                <h5>
+                <h5 className='text-center'>
                   Are you sure you want to delete the employee{' '}
                   {employee.fullName}?
                 </h5>
