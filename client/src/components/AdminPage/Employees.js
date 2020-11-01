@@ -106,13 +106,13 @@ const Employees = ({
       $('.edited').css({ left: 0 });
     });
   }
-  $('.modal').appendTo('body');
+  $('.Modal').appendTo('body');
   return loading ? (
     <div className='container-fluid vh-100'>
       <Spinner />
     </div>
   ) : (
-    <div className='container-fluid vh-100 m-0 p-0 w-100 '>
+    <div className='container-fluid vh-100 m-0 p-0 w-100 overflow-small'>
       <div className='row row-cols-1 p-0'>
         <div className='col p-0 w-100 z-small'>
           <Navbar />

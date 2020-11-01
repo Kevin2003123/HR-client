@@ -106,7 +106,7 @@ const AssingEmployees = ({
         aria-labelledby='staticBackdropLabel'
         aria-hidden='true'
       >
-        <div className='modal-dialog modal-position mobile'>
+        <div className='modal-dialog modal-position'>
           <div className='modal-content'>
             <div className='modal-header'>
               <h5 className='modal-title' id='staticBackdropLabel'>
