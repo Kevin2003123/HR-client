@@ -37,6 +37,7 @@ html {
   }
   body,
   html {
+    overflow-x: hidden;
   }
 
   .ml-large {
@@ -107,7 +108,6 @@ html {
 
 .overflow-small {
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 @media only screen and (min-width: 701px) {
