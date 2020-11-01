@@ -3,6 +3,7 @@ html {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+  -webkit-touch-overflow: scroll;
 }
 
 .bg-for-login {
