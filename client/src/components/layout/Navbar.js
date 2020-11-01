@@ -25,7 +25,7 @@ const Navbar = ({ user: { isAdmin, user }, logout }) => {
 
         <div className='dropdown'>
           <div
-            type='button'
+            role='button'
             id='dropdownMenuButton'
             data-toggle='dropdown'
             aria-haspopup='true'

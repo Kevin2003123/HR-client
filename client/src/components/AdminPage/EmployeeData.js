@@ -88,7 +88,7 @@ const EmployeeData = ({
   return (
     <div>
       <div
-        type='button'
+        role='button'
         className=''
         data-toggle='modal'
         data-target={`#staticBackdrop-${employee._id}`}

@@ -84,7 +84,7 @@ const EditEmployee = ({ employee, editEmployee, edited }) => {
   return (
     <div>
       <div
-        type='button'
+        role='button'
         className=''
         data-toggle='modal'
         data-target={`#staticBackdrop-${key}`}
