@@ -68,7 +68,6 @@ html {
 
   .position-small {
     overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
   }
 
   .modal-small {
