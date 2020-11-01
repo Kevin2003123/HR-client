@@ -233,7 +233,7 @@ const Assigments = ({
           </div>
         </div>
 
-        <div className='col d-flex justify-content-between mr-5 pl-5 pr-5 pt-4 pb-4 w-100'>
+        <div className='col d-flex justify-content-between mr-large mx-0 px-0 pt-4 pb-4 w-100'>
           <input
             className='ml-5 pl-2 rounded border border-secondary'
             type='search'
@@ -248,7 +248,7 @@ const Assigments = ({
           {loadingEmployees ? (
             <Spinner />
           ) : (
-            <div className='d-flex flex-column w-100 '>
+            <div className='d-flex flex-column w-100 position-small'>
               <ul className='list-group list-group-flush w-100'>
                 {employees.map((employee) => (
                   <EmployeesItems

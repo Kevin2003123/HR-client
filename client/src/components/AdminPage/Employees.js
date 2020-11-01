@@ -148,8 +148,8 @@ const Employees = ({
           {loadingEmployees ? (
             <Spinner />
           ) : (
-            <div className='d-flex flex-column w-100 '>
-              <ul className='list-group list-group-flush w-100 position-small'>
+            <div className='d-flex flex-column w-100 position-small '>
+              <ul className='list-group list-group-flush w-100 '>
                 {employees.map((employee) => (
                   <EmployeesItems
                     key={uuidv4()}
