@@ -34,7 +34,9 @@ html {
     display: none;
   }
   .modal-position {
+    position: absolute;
     width: 100%;
+    z-index: 4;
     margin: 0 auto;
   }
   body,
