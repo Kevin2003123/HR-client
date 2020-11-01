@@ -39,9 +39,6 @@ html {
     width: 100%;
     z-index: 2;
     margin: 0 auto;
-    overflow-y: scroll;
-    -webkit-touch-overflow: scroll;
-    -webkit-overflow-scrolling: touch;
   }
   body,
   html {
