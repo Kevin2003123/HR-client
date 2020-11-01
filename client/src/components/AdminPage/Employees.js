@@ -114,11 +114,11 @@ const Employees = ({
   ) : (
     <div className='container-fluid vh-100 m-0 p-0 w-100'>
       <div className='row row-cols-1 p-0'>
-        <div className='col p-0 w-100 position_small'>
+        <div className='col p-0 w-100 z-small'>
           <Navbar />
         </div>
         <div
-          className='col bg-light  d-flex p-0 vw-100'
+          className='col bg-light  d-flex p-0 vw-100 z-small'
           style={{ height: 175 }}
         >
           <h1 className='mt-auto ml-large pb-2 font-weight-bold'>Employees</h1>
@@ -130,7 +130,7 @@ const Employees = ({
           </div>
         </div>
 
-        <div className='col d-flex d-small justify-content-between mr-large mx-0 px-0 pt-4 pb-4 w-100'>
+        <div className='col d-flex d-small justify-content-between mr-large mx-0 px-0 pt-4 pb-4 w-100 z-small'>
           <input
             className='ml-large rounded border border-secondary'
             type='search'
@@ -148,8 +148,8 @@ const Employees = ({
           {loadingEmployees ? (
             <Spinner />
           ) : (
-            <div className='d-flex flex-column w-100 position-small '>
-              <ul className='list-group list-group-flush w-100 '>
+            <div className='d-flex flex-column w-100  '>
+              <ul className='list-group list-group-flush w-100 position-small'>
                 {employees.map((employee) => (
                   <EmployeesItems
                     key={uuidv4()}

@@ -72,6 +72,11 @@ html {
     -webkit-overflow-scrolling: touch;
   }
 
+  .z-small {
+    z-index: -1;
+    position: relative;
+  }
+
   .modal-small {
     width: 100%;
     height: 100%;
