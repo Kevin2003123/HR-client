@@ -3,7 +3,6 @@ html {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 .bg-for-login {
@@ -106,6 +105,10 @@ html {
     margin-bottom: auto;
     padding-top: 50px;
   }
+}
+
+.overflow-small {
+  -webkit-overflow-scrolling: touch;
 }
 
 @media only screen and (min-width: 701px) {
