@@ -121,7 +121,7 @@ const Employees = ({
           className='col bg-light  d-flex p-0 vw-100'
           style={{ height: 175 }}
         >
-          <h1 className='mt-auto ml-5 pl-5 pb-2 font-weight-bold'>Employees</h1>
+          <h1 className='mt-auto ml-large pb-2 font-weight-bold'>Employees</h1>
           <div
             style={{ position: 'absolute', height: 10, width: 150 }}
             className='edited'
@@ -130,9 +130,9 @@ const Employees = ({
           </div>
         </div>
 
-        <div className='col d-flex d-small justify-content-between mr-5 pl-5 pr-5 pt-4 pb-4 w-100'>
+        <div className='col d-flex d-small justify-content-between mr-large mx-0 px-0 pt-4 pb-4 w-100'>
           <input
-            className='ml-5 pl-2 rounded border border-secondary'
+            className='ml-large rounded border border-secondary'
             type='search'
             name='search'
             value={search}
@@ -140,7 +140,7 @@ const Employees = ({
             style={{ width: 250, height: 34 }}
             onChange={(e) => getSearch(e)}
           />
-          <div className='mt-small ml-small'>
+          <div className='mt-small ml-small mr-large'>
             <AddUser />
           </div>
         </div>

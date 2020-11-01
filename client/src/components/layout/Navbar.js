@@ -8,7 +8,7 @@ const Navbar = ({ user: { isAdmin, user }, logout }) => {
       className='d-flex justify-content-between w-100 align-items-center py-3 '
       style={{ height: 95 }}
     >
-      <div className='ml-5 pl-5 d-flex align-items-center mr-1'>
+      <div className='ml-large d-flex align-items-center mr-1'>
         <img
           className='img-fluid border-right pr-2 border-secondary'
           src={require('../../img/graph2.png')}
@@ -18,7 +18,7 @@ const Navbar = ({ user: { isAdmin, user }, logout }) => {
         />
         <h5 className='pl-1 font-weight-bold'>HR Client</h5>
       </div>
-      <div className='d-flex align-items-center mr-5 pr-5'>
+      <div className='d-flex align-items-center mr-large'>
         <h6 className='text-danger mr-3 hide_small'>
           {isAdmin ? 'Employees' : 'Reviews'}
         </h6>

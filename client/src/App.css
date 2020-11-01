@@ -37,8 +37,16 @@ html {
     overflow-x: hidden;
   }
 
+  .ml-large {
+    margin-left: 30px;
+  }
+
+  .mr-large {
+    margin-right: 30px;
+  }
+
   .ml-small {
-    margin-left: 48px;
+    margin-left: 30px;
   }
 
   .mt-small {
@@ -142,5 +150,12 @@ html {
 
   .mt-review2 {
     margin-top: auto;
+  }
+  .ml-large {
+    margin-left: 100px;
+  }
+
+  .mr-large {
+    margin-right: 100px;
   }
 }
