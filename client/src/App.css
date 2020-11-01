@@ -36,12 +36,6 @@ html {
   .modal-position {
     width: 100%;
     margin: 0 auto;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
   }
   body,
   html {
@@ -112,9 +106,6 @@ html {
     margin-bottom: auto;
     padding-top: 50px;
   }
-}
-
-.overflow-small {
 }
 
 @media only screen and (min-width: 701px) {
