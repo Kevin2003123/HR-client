@@ -101,7 +101,7 @@ const EditEmployee = ({ employee, editEmployee, edited }) => {
         aria-labelledby='staticBackdropLabel'
         aria-hidden='true'
       >
-        <div className='modal-dialog modal-dialog-centered modal-lg'>
+        <div className='modal-dialog modal-dialog-centered modal-lg modal-position'>
           <div className='modal-content'>
             <div className='modal-header'>
               <h4

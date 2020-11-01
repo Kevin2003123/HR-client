@@ -34,7 +34,15 @@ html {
   .hide_small {
     display: none;
   }
+  .modal-position {
+    position: absolute;
+    width: 100%;
 
+    margin: 0 auto;
+    overflow-y: scroll;
+    -webkit-touch-overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
   body,
   html {
     overflow-x: hidden;
@@ -66,7 +74,7 @@ html {
   }
 
   .modal-small {
-    width: 100wh;
+    width: 100%;
     height: 100%;
     position: relative;
   }

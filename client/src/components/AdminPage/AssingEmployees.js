@@ -106,7 +106,7 @@ const AssingEmployees = ({
         aria-labelledby='staticBackdropLabel'
         aria-hidden='true'
       >
-        <div className='modal-dialog '>
+        <div className='modal-dialog modal-position'>
           <div className='modal-content'>
             <div className='modal-header'>
               <h5 className='modal-title' id='staticBackdropLabel'>
@@ -123,7 +123,10 @@ const AssingEmployees = ({
               </button>
             </div>
 
-            <div className='modal-body' style={{ position: 'relative' }}>
+            <div
+              className='modal-body modal-small'
+              style={{ position: 'relative' }}
+            >
               <div className=' px-0 d-flex flex-column justify-content-center  '>
                 <div className=''>
                   <input
