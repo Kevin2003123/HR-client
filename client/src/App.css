@@ -34,9 +34,9 @@ html {
     display: none;
   }
   .modal-position {
-    position: absolute;
     width: 100%;
-    z-index: 2;
+    position: absolute !important;
+    z-index: 999999 !important;
     margin: 0 auto;
   }
   body,
