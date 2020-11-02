@@ -108,11 +108,11 @@ const Employees = ({
   }
 
   return loading ? (
-    <div className='container-fluid vh-100'>
+    <div className='container-fluid vh-100 '>
       <Spinner />
     </div>
   ) : (
-    <div className='container-fluid vh-100 m-0 p-0 w-100 '>
+    <div className='container-fluid vh-100 m-0 p-0 w-100 container-small'>
       <div className='row row-cols-1 p-0'>
         <div className='col p-0 w-100 '>
           <Navbar />
