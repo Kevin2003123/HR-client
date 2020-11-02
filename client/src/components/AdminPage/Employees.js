@@ -106,7 +106,7 @@ const Employees = ({
       $('.edited').css({ left: 0 });
     });
   }
-  $('.Modal').appendTo('body');
+
   return loading ? (
     <div className='container-fluid vh-100'>
       <Spinner />
