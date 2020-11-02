@@ -2,8 +2,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  overflow-y: auto;
-  touch-action: auto;
+  overflow: scroll;
 }
 
 .bg-for-login {
