@@ -59,9 +59,7 @@ html {
   }
 
   .position-small {
-    /*
     overflow-x: scroll;
-    */
   }
 
   .modal-small {
@@ -101,7 +99,7 @@ html {
   }
 }
 
-.overflow-small {
+body {
   overflow-x: hidden;
 }
 
