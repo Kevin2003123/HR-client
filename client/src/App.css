@@ -59,7 +59,9 @@ html {
   }
 
   .position-small {
+    /*
     overflow-x: scroll;
+    */
   }
 
   .modal-small {
