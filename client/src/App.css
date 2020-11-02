@@ -58,6 +58,11 @@ html {
   }
 
   .position-small {
+    overflow-x: scroll;
+  }
+
+  .position-x-hide {
+    overflow-x: hidden;
   }
 
   .modal-small {

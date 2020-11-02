@@ -114,7 +114,7 @@ const Employees = ({
   ) : (
     <div className='container-fluid vh-100 m-0 p-0 w-100 '>
       <div className='row row-cols-1 p-0'>
-        <div className='col p-0 w-100 '>
+        <div className='col p-0 w-100 position-x-hide'>
           <Navbar />
         </div>
         <div
@@ -130,7 +130,7 @@ const Employees = ({
           </div>
         </div>
 
-        <div className='col d-flex d-small justify-content-between mr-large mx-0 px-0 pt-4 pb-4 w-100 '>
+        <div className='col d-flex d-small justify-content-between mr-large mx-0 px-0 pt-4 pb-4 w-100 position-x-hide'>
           <input
             className='ml-large rounded border border-secondary'
             type='search'
