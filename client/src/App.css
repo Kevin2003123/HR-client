@@ -63,7 +63,7 @@ html {
   }
 
   .position-small {
-    overflow-x: scroll;
+    overflow: scroll;
   }
 
   .modal-small {
