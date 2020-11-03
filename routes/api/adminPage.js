@@ -264,7 +264,11 @@ router.delete('/delete/employee/:employeeId', async (req, res) => {
         msg: 'Employee not found'
       });
     }
-
+    if (employeeId === `5f9ca616564a3a2b78bb4cef`) {
+      return res.state(400).json({
+        msg: 'This Employee cant be deleted'
+      });
+    }
     await User.findOneAndRemove({ _id: employeeId });
     await Pending.findOneAndRemove({ user: employeeId });
     await Completed.findOneAndRemove({ user: employeeId });

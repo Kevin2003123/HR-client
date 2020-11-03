@@ -41,8 +41,6 @@ const AssingEmployees = ({
     let id = [];
     addedAssing.map((assing) => id.push(assing.user));
 
-    console.log(id);
-
     assingToPending(employee.user, id, page, searchEmployee);
 
     $('body').css({ overflow: 'inherit' });

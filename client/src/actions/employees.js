@@ -342,7 +342,7 @@ export const getComments = (employeeId, page) => async (dispatch) => {
   };
   try {
     const res = await axios.post(`/api/adminPage/comments`, body, config);
-    console.log(res.data);
+
     dispatch({
       type: GET_COMMENTS,
       payload: res.data
@@ -393,8 +393,6 @@ export const assingToPending = (employeeId, assingId, page, search) => async (
     employeeId,
     assingId
   });
-
-  console.log(body);
 
   try {
     const res = await axios.post(`/api/assignment/pending`, body, config);

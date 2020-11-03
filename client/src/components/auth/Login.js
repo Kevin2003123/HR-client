@@ -32,7 +32,7 @@ const Login = ({ login, isAuthenticated, isAdmin, isEmployee }) => {
   };
 
   const setFormEmployee = () => {
-    setFormData({ email: 'Amya_McClure@hotmail.com', password: '123' });
+    setFormData({ email: 'Jedidiah79@yahoo.com', password: '123' });
   };
 
   return (

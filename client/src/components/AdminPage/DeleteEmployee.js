@@ -15,6 +15,7 @@ const DeleteEmployee = ({
   setPage
 }) => {
   const [key, setKey] = useState('');
+  const [alert, setAlert] = useState('d-none');
 
   useEffect(() => {
     setKey(uuidv4());
@@ -22,19 +23,25 @@ const DeleteEmployee = ({
 
   const DeleteEmployee = (e) => {
     e.preventDefault();
+    if (employee.user !== '5f9ca616564a3a2b78bb4cef') {
+      if (page === 1 && length <= 1) {
+        setPage(1);
+        deleteEmployee(employee.user, search, 1, length);
+      } else if (page !== 1 && length <= 1) {
+        setPage(page - 1);
+        deleteEmployee(employee.user, search, page - 1, length);
+      } else {
+        deleteEmployee(employee.user, search, page, length);
+      }
 
-    if (page === 1 && length <= 1) {
-      setPage(1);
-      deleteEmployee(employee.user, search, 1, length);
-    } else if (page !== 1 && length <= 1) {
-      setPage(page - 1);
-      deleteEmployee(employee.user, search, page - 1, length);
+      $('body').css({ overflow: 'inherit' });
+      $('.modal-backdrop').remove();
     } else {
-      deleteEmployee(employee.user, search, page, length);
+      setAlert('');
+      setTimeout(() => {
+        setAlert('d-none');
+      }, 2000);
     }
-
-    $('body').css({ overflow: 'inherit' });
-    $('.modal-backdrop').remove();
   };
   return (
     <div>
@@ -76,7 +83,13 @@ const DeleteEmployee = ({
               </div>
             </div>
 
-            <div className='modal-footer d-flex justify-content-center align-items-center'>
+            <div className='modal-footer d-flex justify-content-center align-items-center position-relative'>
+              <div
+                className={`alert alert-danger ${alert} mr-auto position-absolute`}
+                style={{ left: '0px' }}
+              >
+                this employee cannot be deleted
+              </div>
               <button
                 type='button'
                 className='btn btn-danger'
