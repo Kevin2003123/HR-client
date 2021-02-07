@@ -116,6 +116,7 @@ const AddUser = ({ createEmployee, created }) => {
                         value={name}
                         onChange={(e) => onChange(e)}
                         className='border rounded shadow-sm  input-lg-w'
+                        required
                       />
                     </div>
                     <div className='col-4s mt-2 modal-column'>
