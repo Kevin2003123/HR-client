@@ -81,6 +81,13 @@ const EditEmployee = ({ employee, editEmployee, edited }) => {
     $('.modal-backdrop').remove();
     $('body').css({ overflow: 'inherit' });
   }
+
+  const avatar = (fullName) => {
+    let first = fullName.substring(0, 1).toUpperCase();
+    let index = fullName.indexOf(' ') + 1;
+    let second = fullName.substring(index).slice(0, 1).toUpperCase();
+    return first + ' ' + second;
+  };
   return (
     <div>
       <div
@@ -126,23 +133,12 @@ const EditEmployee = ({ employee, editEmployee, edited }) => {
               >
                 <div className=' d-flex modal-column align-items-center '>
                   <div className='mt-3 ml-3'>
-                    {employee.avatar === '' ? (
-                      <img
-                        className='rounded'
-                        src={require('../../img/perfil.jpg')}
-                        alt='imagen prueba'
-                        height='180'
-                        width='150'
-                      />
-                    ) : (
-                      <img
-                        className='rounded'
-                        src={employee.avatar}
-                        alt='imagen prueba'
-                        height='180'
-                        width='150'
-                      />
-                    )}
+                    <div
+                      className='img-fluid rounded bg-danger text-white text-center d-flex align-items-center justify-content-center'
+                      style={{ width: 150, height: 180 }}
+                    >
+                      <strong>{avatar(employee.fullName)}</strong>
+                    </div>
                   </div>
                   <div className='row ml-3 mr-3 modal-column modal-input-small'>
                     <div className='col-4s mt-2 modal-column '>

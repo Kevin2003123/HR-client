@@ -6,27 +6,22 @@ import EditEmployee from './EditEmployee';
 import DeleteEmployee from './DeleteEmployee';
 import AssingEmployees from './AssingEmployees';
 const EmployeesItems = ({ employee, search, page, length }) => {
+  const avatar = (fullName) => {
+    let first = fullName.substring(0, 1).toUpperCase();
+    let index = fullName.indexOf(' ') + 1;
+    let second = fullName.substring(index).slice(0, 1).toUpperCase();
+    return first + ' ' + second;
+  };
   return (
     <li className='list-group-item d-flex justify-content-between w-100 '>
       <div className='d-flex align-items-center'>
         <div>
-          {employee.avatar === '' ? (
-            <img
-              className='img-fluid rounded-circle'
-              src={require('../../img/perfil.jpg')}
-              alt='imagen prueba'
-              height='50'
-              width='50'
-            />
-          ) : (
-            <img
-              className='img-fluid rounded-circle'
-              src={employee.avatar}
-              alt='imagen usuario'
-              height='50'
-              width='50'
-            />
-          )}
+          <div
+            className='img-fluid rounded-circle bg-danger text-white text-center d-flex align-items-center justify-content-center'
+            style={{ width: 50, height: 50 }}
+          >
+            <strong>{avatar(employee.fullName)}</strong>
+          </div>
         </div>
         <div className='d-flex flex-column ml-3' style={{ width: 155 }}>
           <h6 className='mb-0'>{employee.fullName}</h6>

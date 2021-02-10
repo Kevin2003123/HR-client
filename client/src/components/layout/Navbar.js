@@ -3,6 +3,12 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logout } from '../../actions/auth';
 const Navbar = ({ user: { isAdmin, user }, logout }) => {
+  const avatar = (fullName) => {
+    let first = fullName.substring(0, 1).toUpperCase();
+    let index = fullName.indexOf(' ') + 1;
+    let second = fullName.substring(index).slice(0, 1).toUpperCase();
+    return first + ' ' + second;
+  };
   return (
     <nav
       className='d-flex justify-content-between w-100 align-items-center py-3 '
@@ -32,23 +38,13 @@ const Navbar = ({ user: { isAdmin, user }, logout }) => {
             aria-expanded='false'
             className='dropdown-toggle'
           >
-            {user.avatar === '' ? (
-              <img
-                className='img-fluid rounded-circle'
-                src={require('../../img/perfil.jpg')}
-                alt='imagen prueba'
-                height='40'
-                width='40'
-              />
-            ) : (
-              <img
-                className='img-fluid rounded-circle'
-                src={user.avatar}
-                alt='imagen usuario'
-                height='40'
-                width='40'
-              />
-            )}{' '}
+            <img
+              className='img-fluid rounded-circle'
+              src={require('../../img/perfil.jpg')}
+              alt='imagen prueba'
+              height='40'
+              width='40'
+            />{' '}
             {user.name}
           </div>
           <div className='dropdown-menu' aria-labelledby='dropdownMenuButton'>

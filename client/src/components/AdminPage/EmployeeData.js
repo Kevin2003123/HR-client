@@ -85,6 +85,12 @@ const EmployeeData = ({
     }
   };
 
+  const avatar = (fullName) => {
+    let first = fullName.substring(0, 1).toUpperCase();
+    let index = fullName.indexOf(' ') + 1;
+    let second = fullName.substring(index).slice(0, 1).toUpperCase();
+    return first + ' ' + second;
+  };
   return (
     <div>
       <div
@@ -128,23 +134,12 @@ const EmployeeData = ({
               <ul className='list-group list-group-flush'>
                 <li className='list-group-item d-flex align-items-center '>
                   <div>
-                    {employee.avatar === '' ? (
-                      <img
-                        className='rounded'
-                        src={require('../../img/perfil.jpg')}
-                        alt='imagen prueba'
-                        height='125'
-                        width='125'
-                      />
-                    ) : (
-                      <img
-                        className='rounded'
-                        src={employee.avatar}
-                        alt='imagen prueba'
-                        height='125'
-                        width='125'
-                      />
-                    )}
+                    <div
+                      className='img-fluid rounded bg-danger text-white text-center d-flex align-items-center justify-content-center'
+                      style={{ width: 125, height: 125 }}
+                    >
+                      <strong>{avatar(employee.fullName)}</strong>
+                    </div>
                   </div>
                   <div
                     className='d-flex flex-column ml-3'
